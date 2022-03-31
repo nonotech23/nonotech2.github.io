@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang=en>
+    
+  <head>
+      <meta charset="UTF-8">
+      <title>Skills</title>
+      
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+          crossorigin="anonymous">
+      </script>
+
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+          crossorigin="anonymous">
+      </script>
+
+<!-- CSS pour utilisation de la police d'écriture "Fontawesome" -->
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<!-- CSS pour utilisation des icons Boostrap -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<!-- CSS pour utilisation Boostrap -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+      
+      <link rel="stylesheet" href="Accueil.css">
+      <link rel="stylesheet" href="normalize.css">
+
+  </head>
+
+  <body>
+<!-- Header Control -->
+      <header id="Home" class="p-3 mb-3 bg-dark text-white">
+          <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                 
+<!-- barre de navigation standard -->
+                <ul id="navbar" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="./index.html" class="btn btn-cv"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="./interets.html"  class="btn btn-cv"><i class="fas fa-icons"></i> Interest</a></li>
+                    <li><a href="./competences.html"  class="btn btn-cv btn-a"><i class="fas fa-brain"></i> Skills</a></li>
+                    <li><a href="./projetprofessionnel.html"  class="btn btn-cv"><i class="fas fa-user-tie"></i> Professionnal Project</a></li>
+                    <li>
+                      <div class="btn-group">
+                        <a href="./liensutiles.html"  class="btn btn-dropdown"><i class="fas fa-link"></i> Usefull Links</a>
+                        <button  class="btn btn-dropdown dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./competences.html#video1">Vidéo 1</a></li>
+                          <li><a class="dropdown-item" href="../interets.html#video2">Vidéo 2</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a target="_blank" class="dropdown-item" href="https://www.linkedin.com/in/noan-delaneau/">Linkedin</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+
+<!-- barre de navigation menu burger -->
+                <div id="nav-resp" class="dropdown">
+                  <button class="btn btn-a btn-cv dropdown-toggle"  id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="./index.html">Home</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="./interets.html">Interets</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item active" href="./competences.html">Skills</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="./projetprofessionnel.html">Professionnal Project</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="./liensutiles.html">Usefull Links</a></li>
+                  </ul>
+                </div>
+              
+              </div>
+          </div>
+      </header>
+
+
+
+
+    <div class="container h-auto p-5 mb-3 bg-light modal-content rounded-6 shadow">
+
+      <div class="container text-center">
+        
+          <div class="section-title">
+            <h2>My video of my professional skills</h2>
+          </div>
+
+          <iframe id="video1" src="https://www.youtube.com/embed/UWEmXqtx2H4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+
+    <div id="contenu" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button  class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<!-- Début Centre -->
+    <div class="container h-auto p-5 mb-3 bg-light modal-content rounded-6 shadow">
+
+      <h1 class= "text-center">That's my differents competencies</h1>
+
+      <!-- Ligne 1 compétences -->
+      <div id="imgs" class="body container rounded-6 shadow">
+        <div class="body1 radio-btns" role="radiogroup">
+          <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image one">
+            <a class="a-img-txt">
+              <img src="Images/PNG/RES.png" alt="Image description">
+              <span class="a-txt c1">
+                <strong>Network</strong>
+              </span>
+            </a>
+          </div>
+
+          <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image two">
+            <a class="a-img-txt">
+              <img src="Images/PNG/cyber.png" alt="Image description">
+              <span class="a-txt c1">
+                <strong>Security & Privacy</strong>
+              </span>
+            </a>
+          </div>
+
+          <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image three">
+            <a class="a-img-txt">
+              <img src="Images/PNG/OS.png" alt="Image description">
+              <span class="a-txt c1">
+                <strong>System</strong>
+              </span>
+            </a>
+          </div>
+        </div>
+
+
+<!-- Ligne 2 compétences -->
+        <div class="body1 radio-btns" role="radiogroup">
+          <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image one">
+            <a class="a-img-txt">
+              <img src="Images/PNG/codage.png" alt="Image description">
+              <span class="a-txt c1">
+                <strong>Programming</strong>
+              </span>
+            </a>
+          </div>
+
+          <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image two">
+            <a class="a-img-txt">
+              <img src="Images/PNG/england.png" alt="Image description">
+              <span class="a-txt c1">
+                <strong>English</strong>
+              </span>
+            </a>
+          </div>
+
+          <div id="show" class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image three">
+            <a class="a-img-txt">
+              <img src="Images/PNG/Social.png" alt="Image description">
+              <span class="a-txt c1">
+                <strong>Social Medias</strong>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+<!--Fin Centre -->
+    </div>
+    <script src="action.js"></script>
+
+        <!-- Footer Control -->
+        <div class="container">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <p class="col-md-4 mb-0 text-muted">© 2022 NOAN DELANEAU | Tous droits réservés</p>
+          
+              <a class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+          
+              <ul id="foot" class="text-right nav col-md-4">
+                  <li class="nav-item"><a href="./index.html#Home" class="nav-link px-2 text-muted"><i class="fas fa-home"></i></a></li>
+                  <li class="nav-item"><a href="./interets.html" class="nav-link px-2 text-muted"><i class="fas fa-icons"></i></a></li>
+                  <li class="nav-item"><a href="./liensutiles.html" class="nav-link px-2 text-muted"><i class="fas fa-link"></i></a></li>
+                  <li class="nav-item"><a href="./competences.html" class="nav-link px-2 text-muted"><i class="fas fa-brain"></i></a></li>
+                  <li class="nav-item"><a href="./projetprofessionnel.html" class="nav-link px-2 text-muted"><i class="fas fa-user-tie"></i></a></li>
+              </ul>
+
+              <a class="SM" target="_blank" href="https://instagram.com/noan_dln"><i class="fab fa-instagram"></i></a>
+              <a class="SM" target="_blank" href="https://twitter.com/noan_dln"><i class="fab fa-twitter"></i></a>
+              <a class="SM" target="_blank" href="https://www.linkedin.com/in/noan-delaneau/"><i class="fab fa-linkedin"></i></a>
+              <a class="SM" target="_blank" href="http://www.snapchat.com/add/no_noooooo"><i class="fab fa-snapchat"></i></a>
+              <a class="SM" target="_blank" href="https://wa.me/0763456323"><i class="fab fa-whatsapp"></i></a>
+              
+          </footer>
+        </div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous">
+      </script>
+
+      <!-- script pour retirer le fait que quand on se déplace sur le carousel il se stop de défiler  --> 
+      <script>
+          $('.carousel').carousel({
+          pause: "null"
+          })
+      </script>
+          
+  </body>
+</html>

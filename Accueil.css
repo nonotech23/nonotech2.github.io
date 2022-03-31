@@ -1,0 +1,539 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+/* design body */
+body {
+  /* background-image: url("Images/Cloudy.svg");
+  background-attachment: fixed;
+  background-position: center ;
+  background-repeat: no-repeat ;
+  background-size: cover ; */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+
+/* design bouton "CV"  */
+.btn-cv {
+  border-color: #c50000;
+  margin-right: 0.5rem;
+}
+
+/* action sur l'ensemble des boutons (btn) */
+.btn {
+  color: #232921;
+  background-color: #ffffff;
+}
+
+/* bouton nav actif */
+.btn-a {
+  color: #ffffff;
+  background-color: #212529 ;
+}
+
+.btn-dropdown {
+  border-color: #c50000;
+}
+
+.btn-v{
+  color: white;
+  background-color: #232921 ;
+  margin-bottom: 1px;
+  margin-top: -130px;
+  width: max-content;
+}
+
+.btn-link{
+  color: white;
+  background-color: #232921 ;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.text-end{
+  text-align: end;
+}
+
+.cc {
+  margin-bottom: -30px;;
+}
+
+.btn-v:hover{
+  color: black ;
+  background-color: #ffffff;
+  border-color: #c50000;
+}
+
+/* .btn pour tous les boutons */
+/* hover: action passage souris sur boutons */
+.btn:hover {
+  color: #ffffff;
+  background-color: #212529 ;
+}
+
+.bi {
+  padding:0%;
+}
+
+#exp div{
+  margin-top: 1%;
+}
+
+#déroulant {
+  padding: 0.375rem 0.75rem;
+}
+
+.Font{
+  font-family: monospace;
+  font-size: 1em;
+}
+
+/* design carousel */
+#Carousel-1{
+  height: auto;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.carousel-inner {
+  height: auto;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.3rem;
+  background-color: #212529;
+}
+
+.carousel-caption {
+  top:50%;
+  transform: translateY(-50%);
+  bottom:initial
+}
+
+.carousel-inner h1{
+  color: red;
+}
+
+/* contenu du carousel */
+.carousel-item{
+  height: 30rem;
+}
+
+/* génère un filtre transformant l'image à 50% de niveau de gris  */
+.carousel-item img{
+  filter: grayscale(50%);
+}
+
+/* Gère l'ombrage derrière le texte présent dans le carousel */
+.carousel-item p{
+  text-shadow: 4px 4px 5px black;
+}
+
+/* footer */
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.SM:visited
+{
+color: #232921;
+}
+
+
+.image1 {
+    width: 60px;
+    height: 60px;
+    margin: 29px auto 60px;
+
+}
+
+.link {
+  text-decoration: none;
+  color: red;
+}
+
+.vertical { 
+  margin: 10px;
+  padding: 0;
+  border-left: 2px solid black;  
+  margin-right: 0;
+  margin-left: 10px;
+  height: 70px; 
+  display: inline-block;
+  }
+
+a
+{
+color: #232921;
+text-decoration: none;
+}
+
+      
+ul
+{
+  list-style-type: none;
+}
+
+
+iframe{
+  display: inline;
+  width: 500px;
+  height: 500px;
+}
+
+#Foot i{
+  font-size: 1em;
+}
+
+
+/* Gère la grille d'images présente dans les compétences */
+.radio-btns {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(3, 100px);
+}
+/* Couleur gris quand la souris est sur l'image */
+  .radio-btns__btn:hover {
+    filter: grayscale(75%);
+  }
+/* Affichage couleurs quand la souris n'est pas sur l'image */
+  .radio-btns__btn:not(:hover) {
+    filter: grayscale(0%);
+  }
+
+  .radio-btns__btn {
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  
+  #imgs .container{
+    width: 50%;
+  }
+
+  .body1 {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+
+
+
+
+/* le texte */
+.a-txt{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+  opacity:0;
+  filter:invert(0); /* antibug si effet sur a-img */
+  transition:opacity .8s;
+}
+
+/* coloration par dessus l'image permettant l'affichage d'un texte en blanc */
+.c1{
+    background:#ff6600cc; /* avec alpha */
+}
+
+
+/* le survol de l'image affiche texte */
+.a-txt:hover{
+  opacity:1;
+}
+
+.a-img-txt{
+  display:grid; 
+}
+
+/*textes superposent sur images */
+.a-img-txt>*{
+  grid-area:1/1/-1/-1; 
+  /* raccourci pour grid-row et grid-column */
+}
+
+/* permet d'avoir un padding de 0 pour le container autour du bloc accordion (bloc Boostrap) */
+#last{
+  padding: 0;
+}
+
+/* Logo IUT */
+#pro{
+  float: left;
+  margin: 0 15px 15px 0;
+  max-width: 10%;
+  height: auto;
+}
+
+
+
+
+
+
+
+/* Responsive */
+
+
+/* Barre de navigation responsive (Burger) */
+#nav-resp .dropdown-menu-dark {
+  color: #dee2e6;
+  background-color: #212529;
+}
+
+#nav-resp .dropdown-item {
+  display: block;
+  clear: both;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: left;
+  text-decoration: none;
+  white-space: nowrap;
+
+}
+
+#nav-resp .dropdown-menu-dark .dropdown-item.active{
+  background-color: #c50000;
+}
+/* Fin Barre de navigation responsive (Burger) */
+
+
+
+@media (max-width: 767px){
+
+  /* Retire l'affichage de la navbar standard (afin d'avoir la place d'y mettre la navbar responsive "nav-resp") */
+  #navbar{
+    display: none;
+  }
+
+  /* reduit la taille de l'écart entre les images dans le page "compétences" */
+  .body1{
+    height: 15vh;
+  }
+  /* réduit la taille de la police */
+  .a-txt{
+    font-size: 65%;
+  }
+
+  /* Gère la taille des vidéos */
+  iframe{
+  width: 300px;
+  height: 300px;
+  }
+}
+
+@media (max-width: 992px){
+
+  /* Réduit la hauteur des éléments du carousel */
+  .carousel-item{
+    height: 21em;
+  }
+  .col-lg-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+
+  /* texte experiences qui se replacent à côté des compétences */
+  .col-lg-3 {
+    width: 20%;
+  }
+
+  /* Alignement compétences */
+  .l1{
+    margin-bottom: 70%;
+  }
+
+  .l2{
+    margin-bottom: 28%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+  /* Retire l'affichage de la navbar standard (afin d'avoir la place d'y mettre la navbar responsive "nav-resp") */
+  #navbar{
+    display: none;
+  }
+
+  /* Décale vers la droite les logos de redirection de pages */
+  #foot{
+    padding-left: 10%;
+  } 
+
+  /* reduit la taille de l'écart entre les images dans le page "compétences" */
+  .body1{
+    padding: 2em;
+    height: 20vh;
+  }
+  /* reduit la largeur de l'image de photo du CV */
+  #Noan{
+    width: 70%;
+  }
+
+  /* reduit la largeur du carousel */
+  #Carousel-1{
+    width: 85%;
+  }
+  /* Réduit la hauteur des éléments du carousel */
+  .carousel-item{
+    height: 21em;
+  }
+
+  /* créer un espace de 10px entre les images dans le page "compétences" */
+  .radio-btns{
+    gap: 10px;
+  }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  /* Retire l'affichage de la navbar reponsive (afin d'avoir la place d'y mettre la navbar standard) */
+  #nav-resp{
+    display: none;
+  }
+
+  /* Décale vers la droite les logos de redirection de pages */
+  #foot{
+    padding-left: 16%;
+  } 
+  #text1 p {
+    margin-top: 20px;
+  }
+  #Carousel-1{
+    width: 85%;
+  }
+  .body1{
+    height: 30vh;
+  }
+
+  .col-lg-3 {
+    font-size: 90%;
+  }
+  .col-lg-9 {
+    font-size: 90%;
+  }
+/* Alignement compétences */
+.l1{
+    margin-bottom: 80%;
+  }
+  .l2{
+    margin-bottom: 38%;
+  }
+  .l3{
+    margin-bottom: 40%;
+  }
+  .l4{
+    margin-bottom: 0%;
+  }
+  .l5{
+    margin-bottom: 40%;
+  }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1400px) { 
+
+  /* Retire l'affichage de la navbar reponsive (afin d'avoir la place d'y mettre la navbar standard) */
+  #nav-resp{
+    display: none;
+  }
+
+  #foot{
+    padding-left: 18%;
+  } 
+  #text1 p {
+    margin-top: 20px;
+  }
+  #Carousel-1{
+    width: 85%;
+  }
+  .body1{
+    height: 35vh;
+  }
+/* Alignement compétences */
+  .l1{
+    margin-bottom: 60%;
+  }
+  .l2{
+    margin-bottom: 35%;
+  }
+  .l3{
+    margin-bottom: 30%;
+  }
+  .l4{
+    margin-bottom: 0%;
+  }
+  .l5{
+    margin-bottom: 30%;
+  }
+  .l6{
+    margin-bottom: 0%;
+  }
+  .l7{
+    margin-bottom: 0%;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 4000px) { 
+  #nav-resp{
+    display: none;
+  }
+
+  #foot{
+    padding-left: 20%;
+  } 
+
+  #carousel-1{
+    width: 69%;
+  }
+  #Carousel-1{
+    width: 69%;
+  }
+  .body1{
+    height: 40vh;
+  }
+
+  /* Alignement compétences */
+  .l1{
+    margin-bottom: 47%;
+  }
+  .l2{
+    margin-bottom: 25%;
+  }
+  .l3{
+    margin-bottom: 0%;
+  }
+  .l4{
+    margin-bottom: 0%;
+  }
+  .l5{
+    margin-bottom: 0%;
+  }
+  .l6{
+    margin-bottom: 0%;
+  }
+  .l7{
+    margin-bottom: 0%;
+  }
+}
